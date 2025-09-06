@@ -1,0 +1,16 @@
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: #888;
+}
+
+.welcome-content {
+  max-width: 450px;
+}
+
+.welcome-content h1 {
+  color: #008c9e;
+}

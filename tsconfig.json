@@ -1,0 +1,25 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2020", // or "esnext" for the latest features
+    "module": "esnext", // or "commonjs" depending on your module system
+    "lib": ["dom", "dom.iterable", "esnext"], // Include DOM types for browser APIs
+    "jsx": "react", // If you use React JSX, otherwise remove or set to "preserve"
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow default imports from modules with no default export
+    "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts)
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "moduleResolution": "node", // Resolve modules using Node.js style
+    "resolveJsonModule": true, // Allow importing .json files
+    "isolatedModules": true, // Ensure that each file can be safely transpiled without relying on other files
+    "noEmit": true, // Do not emit output (only type check)
+    "allowJs": false, // Disallow JavaScript files from being compiled
+    "outDir": "./dist", // Output directory for compiled JavaScript (if noEmit is false)
+    "baseUrl": "./", // Base directory to resolve non-relative module names
+    "paths": {
+      "*": ["src/*"] // Example: map imports from 'src'
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"], // Files to include in compilation
+  "exclude": ["node_modules", "src/**/*.js", "src/**/*.jsx"] // Files to exclude
+}
